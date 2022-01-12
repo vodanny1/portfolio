@@ -1,0 +1,79 @@
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.section1{
+    background-color: #293241;
+    color: white;
+}
+
+.main_title {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
+
+.aboutMe, .journey, .education, .links {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+}
+
+.profilePic {
+    padding-bottom: 60px;
+}
+
+#myPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+#aboutMeTitle, #myJourney, #myEducation {
+    text-align: center;
+}
+
+#name {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+#aboutMeTitle, #myJourney, myEducation {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#aboutMeParagraph{
+    font-weight: 100;
+}
+
+.journey h3, .education h3 {
+    font-weight: 400;
+}
+.journey h4, .journey h5, .education h4, .education h5 {
+    font-weight: 100;
+}
+
+.linksContainer {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#linkedin {
+    /* Original Colour */
+    /* color: #0077b5; */
+    color: black;
+}
+
+#github {
+    /* Original Colour */
+    /* color: #6e5494; */
+    color: black;
+}
