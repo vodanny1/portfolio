@@ -1,18 +1,50 @@
-// const linkedin = document.querySelector("#linkedin")
-// const github = document.querySelector("#github")
+const linkedin = document.querySelector("#linkedin")
+const github = document.querySelector("#github")
 
-// linkedin.addEventListener("mouseover", function (e) {
-//     linkedin.style.color = "#0077b5"
-// })
+let dark = false
+function toggleDark() {
+    dark = !dark
+    const doc = document.body
+    doc.classList.toggle("dark-mode")
+    if (dark) {
+        linkedin.style.color = "white"
+        github.style.color = "white"
+    } else {
+        linkedin.style.color = "black"
+        github.style.color = "black"
+    }
 
-// linkedin.addEventListener("mouseout", function (e) {
-//     linkedin.style.color = "black"
-// })
+}
 
-// github.addEventListener("mouseover", function (e) {
-//     github.style.color = "#6e5494"
-// })
+const btnDark = document.querySelector("#btnDark")
 
-// github.addEventListener("mouseout", function (e) {
-//     github.style.color = "black"
-// })
+btnDark.addEventListener("click", function (e) {
+    toggleDark()
+})
+
+linkedin.addEventListener("mouseover", function (e) {
+    linkedin.style.color = "#0077b5"
+})
+
+linkedin.addEventListener("mouseout", function (e) {
+    if (dark) {
+        linkedin.style.color = "white"
+    } else {
+        linkedin.style.color = "dark"
+    }
+
+})
+
+github.addEventListener("mouseover", function (e) {
+    github.style.color = "#6e5494"
+})
+
+github.addEventListener("mouseout", function (e) {
+    if (dark) {
+        github.style.color = "white"
+    } else {
+        github.style.color = "black"
+    }
+})
+
+
