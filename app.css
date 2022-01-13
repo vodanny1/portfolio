@@ -123,7 +123,6 @@ body {
     margin: 0 auto;
     font-size: 1rem;
     align-items: center;
-
 }
 
 #logo {
@@ -131,4 +130,26 @@ body {
     width: auto;
     padding-right: 100px;
     padding-top: 30px;
+}
+
+@media (max-width: 800px){
+    .school, .job {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 801px){
+    .school, .job {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1rem;
+        align-items: center;
+    }
 }
