@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
+
 }
 
 .dark-mode {
@@ -57,17 +58,27 @@ body {
 }
 
 #name {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 #aboutMeTitle, #myJourney, #myEducation {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 #aboutMeParagraph{
+    font-size: 1rem;
     font-weight: 100;
+}
+
+.journey {
+    display: flex;
+    flex-direction: column;
+}
+
+.education {
+    margin-bottom: 50px;
 }
 
 .journey h3, .education h3 {
@@ -110,12 +121,14 @@ body {
     flex-direction: row;
     width: 50%;
     margin: 0 auto;
+    font-size: 1rem;
+    align-items: center;
 
 }
 
 #logo {
-    height: 150px;
+    height: 100px;
     width: auto;
     padding-right: 100px;
-    padding-top: 60px;
+    padding-top: 30px;
 }

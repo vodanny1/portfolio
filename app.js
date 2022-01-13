@@ -22,29 +22,29 @@ btnDark.addEventListener("click", function (e) {
     toggleDark()
 })
 
-linkedin.addEventListener("mouseover", function (e) {
-    linkedin.style.color = "#0077b5"
-})
-
 linkedin.addEventListener("mouseout", function (e) {
     if (dark) {
         linkedin.style.color = "white"
     } else {
-        linkedin.style.color = "dark"
+        linkedin.style.color = "black"
     }
-
-})
-
-github.addEventListener("mouseover", function (e) {
-    github.style.color = "#6e5494"
 })
 
 github.addEventListener("mouseout", function (e) {
+    console.log("git out")
     if (dark) {
         github.style.color = "white"
     } else {
         github.style.color = "black"
     }
+})
+
+linkedin.addEventListener("mouseover", function (e) {
+    linkedin.style.color = "#0077b5"
+})
+
+github.addEventListener("mouseover", function (e) {
+    github.style.color = "#6e5494"
 })
 
 
