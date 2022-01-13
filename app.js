@@ -1,6 +1,12 @@
 const linkedin = document.querySelector("#linkedin")
 const github = document.querySelector("#github")
 
+// Create a blank div, get the height of the absolute div
+// set the new height to be the blank div so that it separates
+// let mainDivHeight = document.getElementsByClassName('section1')[0].offsetHeight
+// let blankDiv = document.getElementsByClassName('blankDiv')[0]
+// blankDiv.style.height = mainDivHeight + 5 + "px"
+
 let dark = false
 function toggleDark() {
     dark = !dark
