@@ -7,19 +7,33 @@ const github = document.querySelector("#github")
 // let blankDiv = document.getElementsByClassName('blankDiv')[0]
 // blankDiv.style.height = mainDivHeight + 5 + "px"
 
-let dark = false
+const theme = localStorage.getItem("data-theme")
+
+if (theme === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark")
+    dark = true
+    linkedin.style.color = "white"
+    github.style.color = "white"
+} else {
+    dark = false
+    document.documentElement.setAttribute("data-theme", "light")
+    linkedin.style.color = "black"
+    github.style.color = "black"
+}
+
 function toggleDark() {
-    dark = !dark
-    const doc = document.body
-    doc.classList.toggle("dark-mode")
-    if (dark) {
+    if (!dark) {
+        document.documentElement.setAttribute("data-theme", "dark")
+        localStorage.setItem("data-theme", "dark")
         linkedin.style.color = "white"
         github.style.color = "white"
     } else {
+        document.documentElement.setAttribute("data-theme", "light")
+        localStorage.setItem("data-theme", "light")
         linkedin.style.color = "black"
         github.style.color = "black"
     }
-
+    dark = !dark
 }
 
 const btnDark = document.querySelector("#btnDark")
@@ -37,7 +51,6 @@ linkedin.addEventListener("mouseout", function (e) {
 })
 
 github.addEventListener("mouseout", function (e) {
-    console.log("git out")
     if (dark) {
         github.style.color = "white"
     } else {

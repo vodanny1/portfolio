@@ -1,6 +1,11 @@
-body {
+html {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
+}
+
+html[data-theme="dark"] {
+    background-color: black;
+    color: white;
 }
 
 .dark-mode {
