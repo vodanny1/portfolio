@@ -28,19 +28,19 @@
 
   <body>
     <div class="photoContainer">
-      <header>
+      <header class="mainHeader">
         <h1 class="header-logo">danny vo</h1>
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <nav>
+        <nav class="mainNav">
           <ul>
-            <li><a href="#anchor-about">About Me</a></li>
-            <li><a href="#anchor-experience">Experience</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a id="nav-item1" href="#anchor-about">About Me</a></li>
+            <li><a id="nav-item2" href="#anchor-experience">Experience</a></li>
+            <li><a id="nav-item3" href="">Resume</a></li>
+            <li><a id="nav-item4" href="">Contact</a></li>
           </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
+          <span class="menuSpan"></span>
         </label>
       </header>
       <!-- <i id="btnDark" class="fas fa-moon fa-2x"></i> -->
@@ -96,54 +96,66 @@
       <a id="anchor-experience"></a>
       <div class="journey">
         <h2 id="myJourney">experience</h2>
-        <div class="job">
-          <img id="logo" src="images/yardi.png" alt="Yardi Logo" />
-          <div>
-            <h3>Yardi</h3>
-            <h4>Associate Technical Account Manager</h4>
-            <h5>September 2021-Present</h5>
-            <h5>Toronto, ON</h5>
+        <div class="allJob">
+          <div class="job">
+            <div class="jobLogo">
+              <img id="logo" src="images/yardi.png" alt="Yardi Logo" />
+            </div>
+            <div class="jobInfo">
+              <h3>Yardi</h3>
+              <h4>Associate Technical Account Manager</h4>
+              <h5>September 2021-Present</h5>
+              <h5>Toronto, ON</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="job">
-          <img id="logo" src="images/walmart.png" alt="Walmart Logo" />
-          <div>
-            <h3>Walmart</h3>
-            <h4>CAP 3</h4>
-            <h5>December 2020-September 2021</h5>
-            <h5>Hamilton, ON</h5>
+          <div class="job">
+            <div class="jobLogo">
+              <img id="logo" src="images/walmart.png" alt="Walmart Logo" />
+            </div>
+            <div class="jobInfo">
+              <h3>Walmart</h3>
+              <h4>CAP 3</h4>
+              <h5>December 2020-September 2021</h5>
+              <h5>Hamilton, ON</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="job">
-          <img
-            id="logo"
-            src="images/trillium.png"
-            alt="Trillium Health Partners Logo"
-          />
-          <div>
-            <h3>Trillium Health Partners</h3>
-            <h4>HIS Implementation</h4>
-            <h5>August 2020-November 2020</h5>
-            <h5>Mississauga, ON</h5>
+          <div class="job">
+            <div class="jobLogo">
+              <img
+                id="logo"
+                src="images/trillium.png"
+                alt="Trillium Health Partners Logo"
+              />
+            </div>
+            <div class="jobInfo">
+              <h3>Trillium Health Partners</h3>
+              <h4>HIS Implementation</h4>
+              <h5>August 2020-November 2020</h5>
+              <h5>Mississauga, ON</h5>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="education">
         <h2 id="myEducation">education</h2>
-        <div class="school">
-          <img
-            id="logo"
-            src="images/uoft.png"
-            alt="University of Toronto Logo"
-          />
-          <div>
-            <h3>University of Toronto</h3>
-            <h4>H.BSc in Statistics and Computer Science</h4>
-            <h5>2016-2020</h5>
-            <h5>Toronto, ON</h5>
+        <div class="allSchool">
+          <div class="school">
+            <div class="schoolLogo">
+              <img
+                id="logo"
+                src="images/uoft.png"
+                alt="University of Toronto Logo"
+              />
+            </div>
+            <div class="schoolInfo">
+              <h3>University of Toronto</h3>
+              <h4>H.BSc in Statistics and Computer Science</h4>
+              <h5>2016-2020</h5>
+              <h5>Toronto, ON</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -152,10 +164,10 @@
     <div class="links">
       <div class="linksContainer">
         <a id="linkedin" href="https://www.linkedin.com/in/danny-vo-a5b517128/"
-          ><i class="fab fa-linkedin fa-2x"></i
+          ><i class="fab fa-linkedin fa-3x"></i
         ></a>
         <a id="github" href="https://github.com/vodanny1"
-          ><i class="fab fa-github fa-2x"></i
+          ><i class="fab fa-github fa-3x"></i
         ></a>
       </div>
     </div>
