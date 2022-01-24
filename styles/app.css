@@ -205,6 +205,12 @@ h5 {
   .aboutMe {
     width: 80%;
   }
+
+  #aboutMeTitle,
+  #myJourney,
+  #myEducation {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 1100px) and (min-width: 801px) {
