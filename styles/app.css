@@ -159,6 +159,10 @@ h5 {
   max-height: 100%;
 }
 
+.links {
+  margin-bottom: 3rem;
+}
+
 .linksContainer {
   display: flex;
   flex-direction: row;
@@ -181,6 +185,12 @@ h5 {
 
 #github:hover {
   transform: scale(1.3);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
