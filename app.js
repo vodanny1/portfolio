@@ -1,7 +1,7 @@
 const linkedin = document.querySelector("#linkedin");
 const github = document.querySelector("#github");
 const btnDark = document.querySelector("#btnDark");
-const logo = document.querySelector(".logo");
+const logo = document.querySelector(".header-logo");
 
 const theme = localStorage.getItem("data-theme");
 

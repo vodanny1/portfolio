@@ -63,6 +63,7 @@ html[data-theme="light"] {
   padding: 10px;
   padding-bottom: 5rem;
   width: 60%;
+  /* position: relative; */
 }
 
 .aboutMe {
@@ -164,6 +165,14 @@ html[data-theme="light"] {
   padding-bottom: 2rem;
 }
 
+#logo {
+  height: 100px;
+  width: auto;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+
+/* Uncomment after */
 @media (max-width: 800px) {
   #myPic {
     width: 150px;

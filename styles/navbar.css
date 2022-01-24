@@ -109,7 +109,7 @@ nav a:hover {
     padding-bottom: 0.5em;
   }
 
-  .logo {
+  .header-logo {
     grid-column: 2 / 3;
   }
 
