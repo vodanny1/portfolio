@@ -10,13 +10,13 @@ if (theme === "dark") {
   dark = true;
   linkedin.style.color = "white";
   github.style.color = "white";
-  logo.style.color = "white";
+  logo.style.color = "black";
 } else {
   dark = false;
   document.documentElement.setAttribute("data-theme", "light");
   linkedin.style.color = "black";
   github.style.color = "black";
-  logo.style.color = "white";
+  logo.style.color = "black";
 }
 
 function toggleDark() {
