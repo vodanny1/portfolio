@@ -1,6 +1,7 @@
 const linkedin = document.querySelector("#linkedin");
 const github = document.querySelector("#github");
 const btnDark = document.querySelector("#btnDark");
+const logo = document.querySelector(".logo");
 
 const theme = localStorage.getItem("data-theme");
 
@@ -9,11 +10,13 @@ if (theme === "dark") {
   dark = true;
   linkedin.style.color = "white";
   github.style.color = "white";
+  logo.style.color = "white";
 } else {
   dark = false;
   document.documentElement.setAttribute("data-theme", "light");
   linkedin.style.color = "black";
   github.style.color = "black";
+  logo.style.color = "white";
 }
 
 function toggleDark() {
@@ -23,12 +26,14 @@ function toggleDark() {
     linkedin.style.color = "white";
     github.style.color = "white";
     btnDark.style.color = "white";
+    logo.style.color = "white";
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("data-theme", "light");
     linkedin.style.color = "black";
     github.style.color = "black";
     btnDark.style.color = "black";
+    logo.style.color = "white";
   }
   dark = !dark;
 }
