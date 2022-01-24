@@ -257,8 +257,12 @@ h1 {
 } */
 
 @media (max-width: 800px) {
+  h1 {
+    padding-top: 14rem;
+    font-size: 40px;
+  }
   #myPic {
-    width: 300px;
+    width: 150px;
   }
   .school,
   .job {
@@ -273,6 +277,9 @@ h1 {
 }
 
 @media (max-width: 1100px) and (min-width: 801px) {
+  #myPic {
+    width: 250px;
+  }
   .school,
   .job {
     width: 70%;
