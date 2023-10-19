@@ -1,7 +1,6 @@
 {
   "name": "portfolio-angular",
   "version": "0.0.0",
-  "homepage": "https://vodanny1.github.io/portfolio/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
