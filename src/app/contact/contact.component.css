@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  width: 65%;
+}
+
+#contactTitle {
+  padding-top: 3rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+}
+
+#contactParagraph {
+  line-height: 2;
+}
