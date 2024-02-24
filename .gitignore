@@ -71,3 +71,5 @@ dist/
 docs/
 .firebaserc
 firebase.json
+package-lock.json
+tsconfig.spec.json
