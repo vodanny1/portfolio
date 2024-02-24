@@ -1,4 +1,23 @@
+.navbar {
+  background-color: transparent;
+}
+a {
+  color: gray;
+  font-weight: 250;
+}
+
+a:hover {
+  color: black;
+}
 .title {
   font-family: "Playfair Display", serif;
   font-size: 36px;
+}
+
+.navbar-left .navbar-brand {
+  margin-left: 20px; /* Adjust the margin as per your preference */
+}
+
+.navbar-right .navbar-brand {
+  margin-right: 20px; /* Adjust the margin as per your preference */
 }

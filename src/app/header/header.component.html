@@ -1,18 +1,30 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar">
   <div class="container-fluid">
     <div class="navbar-left">
-      <a class="navbar-brand title" style="cursor: pointer" routerLink="/"
-        >danny vo</a
-      >
-    </div>
-    <div class="navbar-header navbar-right">
       <a class="navbar-brand" style="cursor: pointer" routerLink="/home"
         >home</a
       >
 
-      <a class="navbar-brand" style="cursor: pointer" routerLink="/contact"
-        >links</a
-      >
+      <!-- <a class="navbar-brand" style="cursor: pointer" routerLink="/connect"
+        >connect</a
+      > -->
+    </div>
+    <div class="navbar-header navbar-right">
+      <!-- <a class="navbar-brand" style="cursor: pointer">test</a> -->
+      <a
+        class="navbar-brand"
+        style="cursor: pointer"
+        href="https://github.com/vodanny1"
+        target="_blank"
+        ><fa-icon [icon]="faGithub"></fa-icon
+      ></a>
+      <a
+        class="navbar-brand"
+        style="cursor: pointer"
+        href="https://www.linkedin.com/in/danny-vo-a5b517128/"
+        target="_blank"
+        ><fa-icon [icon]="faLinkedin"></fa-icon
+      ></a>
     </div>
   </div>
 </div>
