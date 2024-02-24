@@ -73,3 +73,4 @@ docs/
 firebase.json
 package-lock.json
 tsconfig.spec.json
+docs/
