@@ -1,8 +1,18 @@
 <div class="navbar">
   <div class="container-fluid">
-    <div class="navbar-left">
-      <a class="navbar-brand" style="cursor: pointer" routerLink="/home"
-        >home</a
+    <div class="navbar-right">
+      <a
+        class="navbar-brand"
+        style="cursor: pointer"
+        href="#"
+        (click)="scrollToDescription()"
+        >About</a
+      >
+      <a class="navbar-brand" style="cursor: pointer" routerLink="/experience"
+        >Experience</a
+      >
+      <a class="navbar-brand" style="cursor: pointer" routerLink="/contact"
+        >Contact</a
       >
 
       <!-- <a class="navbar-brand" style="cursor: pointer" routerLink="/connect"
@@ -10,7 +20,7 @@
       > -->
     </div>
     <div class="navbar-header navbar-right">
-      <a
+      <!-- <a
         id="github"
         class="navbar-brand"
         style="cursor: pointer"
@@ -25,7 +35,7 @@
         href="https://www.linkedin.com/in/danny-vo-a5b517128/"
         target="_blank"
         ><fa-icon [icon]="faLinkedin"></fa-icon
-      ></a>
+      ></a> -->
     </div>
   </div>
 </div>

@@ -1,7 +1,15 @@
-<div>
+<div class="main-container">
   <app-header *ngIf="router.url !== '/'"></app-header>
+  <div class="content-wrapper">
+    <app-welcome></app-welcome>
+  </div>
 </div>
-<router-outlet></router-outlet>
-<footer class="footer">
+
+<div #descriptionSection>
+  <app-description></app-description>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
+<!-- <footer class="footer">
   <p>Copyright &copy; 2023 Danny Vo. All Rights Reserved</p>
-</footer>
+</footer> -->

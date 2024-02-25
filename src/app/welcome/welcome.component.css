@@ -1,86 +1,56 @@
-h2 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
+h3 {
+  font-family: "Courier", serif;
+  text-align: left;
+}
+
+h1 {
+  text-align: left;
+  font-family: "Helvetica", serif;
+  font-size: 100px;
+}
+
+#name {
+  color: #fba834;
+}
+
+#slogan,
+h3 {
+  color: #af7524;
+}
+
+#intro {
+  color: #00e19d;
 }
 
 .container {
+  transform: translateY(10vh);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* flex-direction: column; */
-}
-
-button {
-  margin-right: 10px;
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
+  /* height: 100vh; */
+  /* height: 100%; */
+  width: 90vw;
 }
 
 .center {
   text-align: right;
-  margin-right: 10px;
-}
-
-.center h2 {
-  padding: 10px;
+  /* padding-left: 100px; */
 }
 
 .image-container img {
   border-radius: 50%;
-  max-width: 250px;
-  height: auto;
+  /* max-width: 20vw;
+  height: auto; */
+
+  width: 300px;
+  height: 300px;
 }
 
-/* CSS */
-.button-51 {
+.image-container {
+  padding-right: 100px;
+  margin-left: 15vw;
+}
+
+body {
   background-color: transparent;
-  border: 1px solid #266db6;
-  box-sizing: border-box;
-  color: #00132c;
-  font-family: "Avenir Next LT W01 Bold", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-51:hover,
-.button-51:active {
-  outline: 0;
-}
-
-.button-51:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.button-51:before {
-  background-color: #d5edf6;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
-}
-
-.button-51:hover:before {
-  background-color: #6dcff6;
-}
-
-@media (min-width: 768px) {
-  .button-51 {
-    padding: 16px 32px;
-  }
 }

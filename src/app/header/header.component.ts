@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 @Component({
   selector: "app-header",
@@ -6,9 +6,20 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
   styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild("descriptionSection") descriptionSection: ElementRef;
+
   faGithub = faGithub;
   faLinkedin = faLinkedin;
-  constructor() {}
+
+  constructor(private el: ElementRef) {}
 
   ngOnInit(): void {}
+
+  scrollToDescription() {
+    this.descriptionSection.nativeElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
 }

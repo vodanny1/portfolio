@@ -1,9 +1,11 @@
 .navbar {
   background-color: transparent;
 }
+
 a {
-  color: gray;
+  color: #00e19d;
   font-weight: 250;
+  font-family: "Courier", serif;
 }
 
 a:hover {
