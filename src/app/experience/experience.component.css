@@ -3,31 +3,35 @@
   padding: 0;
 }
 
-html {
-  font-family: "Roboto", sans-serif;
-  /* font-family: "Playfair Display", serif; */
-  margin-bottom: 20px;
-  scroll-behavior: smooth;
+.experienceContainer {
+  background-color: #333a73;
+  display: flex;
+  justify-content: center;
 }
 
-.journey {
-  margin-bottom: 3rem;
-}
-
-.education {
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 50vw;
+  background-color: white;
+  border-radius: 3%;
   margin-bottom: 10rem;
 }
 
 #myJourney,
-#myEducation {
+#myEducation,
+#myCurrentJourney {
   padding-top: 3rem;
   text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
+  /* font-family: "Playfair Display", serif; */
+  /* font-family: "Roboto", serif; */
+  font-size: 36px;
+  /* color: #00e19d; */
 }
 
 .journey,
-.education {
+.education.currentJourney {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +40,7 @@ html {
 
 .journey h2,
 .education h2,
+.currentJourney h2,
 #aboutMeTitle {
   margin-bottom: 5rem;
 }
@@ -43,8 +48,8 @@ html {
 .allJob,
 .allSchool {
   display: flex;
-  /* flex-direction: column; */
-  flex-direction: row-reverse;
+  flex-direction: column;
+  /* flex-direction: row-reverse; */
 }
 
 .job,
@@ -53,8 +58,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-left: 7rem;
-      margin-right: 7rem; */
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -72,13 +75,23 @@ html {
 .jobInfo h3,
 .jobInfo h4,
 .schoolInfo h3,
-.schoolInfoh4 {
+.schoolInfo h4 {
   margin-bottom: 5px;
+  /* color: white; */
 }
 
 h4,
 h5 {
   font-weight: 100;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.journey {
+  border-left: 2px solid black;
+  border-right: 2px solid grey;
 }
 
 #logo {
@@ -108,40 +121,4 @@ h5 {
   #myEducation {
     font-size: 40px;
   }
-}
-
-@media (max-width: 1100px) and (min-width: 801px) {
-  .job,
-  .school {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-.links {
-  margin-bottom: 3rem;
-}
-
-.linksContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-#linkedin {
-  color: black;
-  transition: 0.5s;
-}
-
-#github {
-  color: black;
-  transition: 0.5s;
-}
-
-#linkedin:hover {
-  transform: scale(1.3);
-}
-
-#github:hover {
-  transform: scale(1.3);
 }

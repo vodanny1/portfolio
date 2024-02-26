@@ -1,32 +1,25 @@
 .aboutMe {
+  background-color: transparent;
+  /* color: red; */
+}
+.aboutMe {
   display: block;
   margin: 0 auto;
   /* width: 65%; */
-  width: 100%;
+  width: 60vw;
 }
 
+h2 {
+  color: #fba834;
+  margin: 0;
+}
 p {
   /* color: white; */
   font-size: 16px;
   font-weight: 300;
   text-align: center;
-}
-
-.paragraphDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #e8c872;
-  width: 100%;
-  border-radius: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.paragraph {
-  /* display: block; */
-  width: 65%;
+  color: #af7524;
+  margin: 0;
 }
 
 #aboutMeTitle {
@@ -40,75 +33,8 @@ p {
   line-height: 2;
 }
 
-.links {
-  margin-bottom: 3rem;
-}
-
-.linksContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-#linkedin {
-  color: black;
-  transition: 0.5s;
-}
-
-#github {
-  color: black;
-  transition: 0.5s;
-}
-
-#linkedin:hover {
-  transform: scale(1.3);
-}
-
-#github:hover {
-  transform: scale(1.3);
-}
-
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.expandButton {
-  margin-top: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: 2px solid #c9d7dd;
-  background-color: #c9d7dd;
-  color: white;
-  transition: width 0.7s;
-}
-
-.expandButton:hover {
-  width: 180px;
-  transition: width 0.7s;
-}
-
-.expandButton fa-icon {
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-.expandButton:hover fa-icon {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.expandButton .button-text {
-  opacity: 0;
-  transition: opacity 0.5s;
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-.expandButton:hover .button-text {
-  opacity: 1;
-  transition: opacity 0.5s;
 }
